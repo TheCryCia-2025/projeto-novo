@@ -1,0 +1,174 @@
+body{
+    margin: 0;
+}
+
+header{
+    margin: 0;
+    background-color: #DCF0EE;
+    display: flex;
+    align-items: center; /* Alinha verticalmente */
+    padding: 10px 30px;
+
+}
+
+header > img{
+    padding: 0 60px 0 30px;
+    width: 300px;
+    display: flex;
+}
+
+header > .navegation {
+    gap: 25px;
+    display: flex;
+    text-decoration: none;
+
+}
+/* Estiliza todos os links */
+a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #439086; /* Adicione uma cor para melhor visibilidade */
+    padding: 15px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    
+
+}
+
+/* Efeito ao passar o mouse */
+a:hover {
+    transition: 0.5s;
+    padding: 15px;
+    background-color: #439086;
+    color: #DCF0EE; /* Muda a cor do texto para melhor contraste */
+    border-radius: 5px; /* Arredonda as bordas */
+    transform: scale(1.05);
+}
+main {
+    margin: 0;
+
+    
+}
+.section{
+    margin: 0;
+    background-color: rgb(242, 242, 242);
+    padding-top: 20px ;
+    padding-bottom: 20px ;
+}
+
+hr {
+    
+    margin: auto;
+    width: 90%;
+    display: flex;
+    
+}
+
+.metodos {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 90px ;
+    padding: 30px;
+    align-items: center;
+
+}
+
+.filtrar{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.filtrar > label {
+    font-size: 28px;
+}
+.filtrar > input {
+    font-size: 19px;
+    padding: 5px;
+}
+.addAdicionar{
+    font-size: 20px;
+    padding: 15px;
+    background-color: #439086;
+    border: 0;
+    color: #DCF0EE;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.addAdicionar:hover {
+    background-color: #356e66;
+    transform: scale(1.05);
+    transition: 0.2s ease; /* suave */
+}
+
+
+table {
+    margin: 0;
+    border-collapse: collapse; /* Junta as bordas */
+    width: 100%; /* Garante que a tabela ocupe toda a largura */
+}
+
+td, th{
+    border: 1px solid rgb(155, 155, 155); /* Borda aplicada às células */
+    padding: 25px 35px;
+    text-align: center; /* Centraliza o texto */
+    background-color: #fdfdfd;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+
+}
+#codigo{
+    width: 10%;
+}
+#nome{
+    width: 25%;
+}
+#descricao{
+    width: 30%;
+}
+#medico{
+    width: 25%;
+}
+#opcoes{
+    width: 10%;
+}
+
+#edit-button{
+    display: flex;
+
+}
+
+.btn-editar,
+.btn-excluir {
+    display: inline-flex; /* melhor ainda para centralizar ícone */
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    margin: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.btn-editar {
+    background-color: rgb(255, 157, 0);
+}
+
+.btn-editar:hover {
+    background-color: rgb(204, 102, 0);  /* um laranja queimado */
+    transform: scale(1.05);
+    transition: 0.2s ease; /* suave */
+}
+
+.btn-excluir {
+    background-color: red;
+}
+.btn-excluir:hover{
+    background-color: rgb(153, 0, 0);
+    transform: scale(1.05);
+    transition: 0.2s ease; /* suave */
+}

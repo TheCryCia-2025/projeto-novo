@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <link rel="stylesheet" href="dashboard.component.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+<body>      
+    <header>
+        <img src="" alt="Logo SEMASPE">
+
+
+        <nav class="navegation">    
+            <a class="nav-pages" href="">Médicos</a>
+            <a class="nav-pages" href="">Pacientes</a>
+            <a class="nav-pages" href="">Sobre</a>
+            <a class="nav-pages" href="">Sair</a>
+        </nav>
+    </header>
+    <main>
+        <div class="section">
+            <hr>
+
+            <div class="metodos">
+                <div class="filtrar">
+                    <label class="label">Pesquisar</label>
+                    <input type="text" placeholder="Pesquisar">
+                </div >
+                <div>
+                    <button class="addAdicionar">+ Adicionar Paciente</button>
+                </div>
+            </div>
+
+            <hr>
+        </div>
+
+        <div class="interation">
+            <table class="tabela">
+                <thead>
+                    <tr>
+                        <th id="codigo">Código</th>
+                        <th id="nome">Nome</th>
+                        <th id="descricao">Descrição</th>
+                        <th id="medico">Médico</th>
+                        <th id="opcoes">Opções</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>João Silva</td>
+                        <td>Check-up</td>
+                        <td>Dra. Ana</td>
+                        <td id="edit-button">
+                            <button class="btn-editar">
+                                <i class="bi bi-pencil-square"></i> 
+                            </button>    
+                            <button class="btn-excluir">
+                                <i class="bi bi-trash"></i> 
+                            </button>
+                        </td>
+                    </tr>
+                    <!-- Adicione mais <tr> aqui para mais pacientes -->
+                </tbody>
+            </table>
+            
+        </div>
+    </main>    
+</body>
+</html>
