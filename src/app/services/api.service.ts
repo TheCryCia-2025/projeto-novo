@@ -29,9 +29,6 @@ export class ApiService {
     return this.http.get(`${this.baseUrl}/medicos/${id}`);
   }
   
-  atualizarMedico(id: number, medico: any) {
-    return this.http.put(`${this.baseUrl}/medicos/${id}`, medico);
-  }
   
   
   
