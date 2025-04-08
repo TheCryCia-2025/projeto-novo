@@ -3,10 +3,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 
-
 <header>
     <img src="https://github.com/TheCryCia-2025/projeto-novo/blob/main/src/assets/logo.png?raw=true" alt="Logo SEMASPE" />
-  
     <nav class="navegation">
       <a class="nav-pages" routerLink="/dashboard">Médicos</a>
       <a class="nav-pages" routerLink="/pacientes">Pacientes</a>
@@ -24,7 +22,8 @@
           <input type="text" placeholder="Pesquisar" [(ngModel)]="filtro" />
         </div>
         <div>
-          <button class="addAdicionar" routerLink="/adicionar-medico">+ Adicionar Médico</button>
+          <button routerLink="/adicionar-paciente" class="addAdicionar">+ Adicionar Paciente</button>
+
         </div>
       </div>
       <hr />
@@ -37,21 +36,20 @@
             <th id="codigo">Código</th>
             <th id="nome">Nome</th>
             <th id="descricao">Descrição</th>
-            <th id="medico">Paciente</th>
+            <th id="medico">Médico</th>
             <th id="opcoes">Opções</th>
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let medico of medicosFiltrados">
-            <td>{{ medico.id }}</td>
-            <td>{{ medico.nome}}</td>
-            <td>{{ medico.descricao }}</td>
-            <td>{{ medico.paciente }}</td>
+          <tr *ngFor="let paciente of pacientesFiltrados">
+            <td>{{ paciente.id }}</td>
+            <td>{{ paciente.nome  }}</td>
+            <td>{{ paciente.descricao }}</td>
+            <td>{{ paciente.medico }}</td>
             <td id="edit-button">
-              <button class="btn-editar" [routerLink]="['/editar-medico', medico.id]">
-                <i class="bi bi-pencil-square"></i>
+              <button class="btn-editar">
+                <i class="bi bi-pencil-square"></i> 
               </button>
-              
               <button class="btn-excluir">
                 <i class="bi bi-trash"></i> 
               </button>

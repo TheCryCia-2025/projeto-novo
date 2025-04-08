@@ -1,0 +1,55 @@
+.titulo-pagina {
+    text-align: center;
+    margin: 2rem 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .container-tabela {
+    max-width: 700px;
+    margin: auto;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .formulario-adicao {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .grupo-formulario {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+  
+  .btn-salvar {
+    background-color: #007bff;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    align-self: flex-end;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-salvar:hover {
+    background-color: #0056b3;
+  }
+  

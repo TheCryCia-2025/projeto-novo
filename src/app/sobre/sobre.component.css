@@ -1,0 +1,127 @@
+body{
+    margin: 0;
+}
+
+header{
+    margin: 0;
+    background-color: #DCF0EE;
+    display: flex;
+    align-items: center; /* Alinha verticalmente */
+    padding: 10px 30px;
+
+}
+
+header > img{
+    padding: 0 60px 0 30px;
+    width: 300px;
+    display: flex;
+}
+
+header > .navegation {
+    gap: 25px;
+    display: flex;
+    text-decoration: none;
+
+}
+/* Estiliza todos os links */
+a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #439086; /* Adicione uma cor para melhor visibilidade */
+    padding: 15px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    
+
+}
+
+/* Efeito ao passar o mouse */
+a:hover {
+    transition: 0.5s;
+    padding: 15px;
+    background-color: #439086;
+    color: #DCF0EE; /* Muda a cor do texto para melhor contraste */
+    border-radius: 5px; /* Arredonda as bordas */
+    transform: scale(1.05);
+}
+/* Estilo geral para o main */
+main {
+    padding: 40px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  /* Seção principal (título + introdução) */
+  .section {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .section h1 {
+    font-size: 32px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .section h3 {
+    font-size: 22px;
+    color: #3498db;
+    margin-bottom: 15px;
+  }
+  
+  .section p {
+    font-size: 16px;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  /* Conteúdo detalhado abaixo */
+  .interation {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+  }
+  
+  .conteudo-sobre h2 {
+    font-size: 22px;
+    color: #2c3e50;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .conteudo-sobre ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .conteudo-sobre p {
+    font-size: 16px;
+    color: #444;
+    margin-top: 15px;
+    line-height: 1.6;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .section, .interation {
+      padding: 20px;
+    }
+  
+    .section h1 {
+      font-size: 26px;
+    }
+  
+    .section h3 {
+      font-size: 20px;
+    }
+  }
+  

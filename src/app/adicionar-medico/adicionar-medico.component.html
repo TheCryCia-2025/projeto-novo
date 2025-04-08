@@ -1,0 +1,27 @@
+<main>
+    <div class="titulo-pagina">
+      <h1>Cadastro de Médicos</h1>
+    </div>
+  
+    <div class="container-tabela">
+      <form class="formulario-adicao" (ngSubmit)="adicionarMedico()">
+        <div class="grupo-formulario">
+          <label for="nome">Nome do Médico:</label>
+          <input type="text" id="nome" name="nome" [(ngModel)]="novoMedico.nome" required />
+        </div>
+  
+        <div class="grupo-formulario">
+          <label for="descricao">Descrição:</label>
+          <input type="text" id="descricao" name="descricao" [(ngModel)]="novoMedico.descricao" />
+        </div>
+  
+        <div class="grupo-formulario">
+          <label for="paciente">Paciente:</label>
+          <input type="text" id="paciente" name="paciente" [(ngModel)]="novoMedico.paciente" />
+        </div>
+  
+        <button class="btn-salvar" type="submit">Salvar Médico</button>
+      </form>
+    </div>
+  </main>
+  
